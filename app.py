@@ -1,9 +1,7 @@
-from flask import Flask,render_template,request, abort, jsonify,Markup
-from io import StringIO
+from flask import Flask,render_template,request, abort, jsonify
+
 
 app = Flask(__name__)
-
-
 
 @app.errorhandler(404)
 def resource_not_found(e):
@@ -13,8 +11,6 @@ def resource_not_found(e):
 def index():
     return render_template('index.html')
 
-
-    
 @app.route('/getbadge', methods=['GET'])
 def getbadge():
     try:
@@ -30,6 +26,3 @@ def getbadge():
         abort(404, description="Resource not found")
 
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
