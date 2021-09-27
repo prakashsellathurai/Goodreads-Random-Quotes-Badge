@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.errorhandler(404)
 def resource_not_found(e):
-    return jsonify(error="Server error"), 404
+    return render_template("404.html")
 
 @app.route('/', methods=['GET'])
 def index():
