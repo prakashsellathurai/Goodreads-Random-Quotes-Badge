@@ -1,10 +1,10 @@
-from app import flaskApp
+from app import app
 import pytest
 
 @pytest.fixture
 def client():
     
-    with flaskApp.test_client() as client:
+    with app.test_client() as client:
         yield client
         
 def test_index_page(client):

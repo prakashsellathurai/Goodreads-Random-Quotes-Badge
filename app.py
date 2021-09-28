@@ -2,13 +2,13 @@ from flask import Flask,render_template,request, abort, jsonify,Markup,make_resp
 import requests
 
 
-flaskApp = Flask(__name__)
+app = Flask(__name__)
 
-@flaskApp.errorhandler(404)
+@app.errorhandler(404)
 def resource_not_found(e):
     return render_template("404.html"),404
 
-@flaskApp.route('/', methods=['GET'])
+@app.route('/', methods=['GET'])
 def index():
     return render_template('index.html'),200
 
@@ -25,7 +25,7 @@ def parse_content(content):
     content = content + "</div>"
     return content
 
-@flaskApp.route('/getbadge', methods=['GET'])
+@app.route('/getbadge', methods=['GET'])
 def getbadge():
     try:
         goodReadsProfileUrl = request.args.get('goodReadsUrl')  
