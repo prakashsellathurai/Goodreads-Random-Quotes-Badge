@@ -3,17 +3,21 @@
 
   &#xa0;
 
-  <a href="https://goodreads-random-quotes-badge.vercel.app/">https://goodreads-random-quotes-badge.vercel.app/</a>
+
 </div> -->
 
 <h1 align="center">Goodreads Random Quotes Badge</h1>
+ <div align="center">
+  <a href="https://goodreads-random-quotes-badge.vercel.app/">https://goodreads-random-quotes-badge.vercel.app/</a>
+  </div>
 
+  <br/>
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg">
 
 
-
-  <img alt="Website up" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg">
+<a href="https://goodreads-random-quotes-badge.vercel.app/">
+  <img alt="Website up" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg"></a>
 
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/prakashsellathurai/goodreads-random-quotes-badge?color=56BEB8">
 
@@ -53,7 +57,7 @@
 Show a random quote from your Goodreads Account on your GitHub readme.
 
 ## Usage
-replace {{ your goodreads profile url }} with yours  and paste the  code in your github readme 
+replace `{{ your goodreads profile url }}` with yours  and paste the  code in your github readme 
 
 ``` 
 ![](https://goodreads-random-quotes-badge.vercel.app/getbadge?goodReadsUrl= {{ your goodreads profile url }})
