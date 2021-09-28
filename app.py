@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 @app.errorhandler(404)
 def resource_not_found(e):
-    return render_template("404.html"),404
+    return render_template("404.html.jinja"),404
 
 @app.route('/', methods=['GET'])
 def index():
-    return render_template('index.html'),200
+    return render_template('index.html.jinja'),200
 
 def parse_content(content):
     content = content.decode()
@@ -36,7 +36,7 @@ def getbadge():
         content = requests.get(goodReadsQuotesUrl).content
         content = parse_content(content=content)
         
-        template =  render_template('badge.svg',content=content,goodReadsQuotesUrl=goodReadsQuotesUrl,goodReadsProfileUrl=goodReadsProfileUrl)
+        template =  render_template('badge.svg.jinja',content=content,goodReadsQuotesUrl=goodReadsQuotesUrl,goodReadsProfileUrl=goodReadsProfileUrl)
 
         response = make_response(template)
         response.headers["Content-Type"] = "image/svg+xml"
