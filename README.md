@@ -39,10 +39,10 @@
 <hr> -->
 
 <p align="center">
-  <a href="about">About</a> &#xa0; | &#xa0; 
-  <a href="usage">Usage</a> &#xa0; | &#xa0; 
-  <a href="example">Example</a> &#xa0; | &#xa0; 
-  <a href="license">License</a> &#xa0; | &#xa0;
+  <a href="#about">About</a> &#xa0; | &#xa0; 
+  <a href="#usage">Usage</a> &#xa0; | &#xa0; 
+  <a href="#example">Example</a> &#xa0; | &#xa0; 
+  <a href="#license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/prakashsellathurai" target="_blank">Author</a>
 </p>
 
