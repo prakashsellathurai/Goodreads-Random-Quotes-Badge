@@ -23,6 +23,9 @@
 
 <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2021">
 
+<a href="https://github.com/prakashsellathurai/Goodreads-Random-Quotes-Badge/actions/workflows/python-app-test.yml">
+ <img alt="Python test" src="https://github.com/prakashsellathurai/Goodreads-Random-Quotes-Badge/actions/workflows/python-app-test.yml/badge.svg">
+	</a>
   <img alt="License" src="https://img.shields.io/github/license/prakashsellathurai/goodreads-random-quotes-badge?color=56BEB8">
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/prakashsellathurai/goodreads-random-quotes-badge?color=56BEB8" /> -->
